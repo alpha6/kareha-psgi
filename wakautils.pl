@@ -1,6 +1,7 @@
 # wakautils.pl v8.12
 
 use strict;
+use warnings;
 
 use Time::Local;
 use Socket;
@@ -1112,7 +1113,7 @@ sub analyze_image($$) {
 	return (lc($ext),0,0);
 }
 
-sub safety_check($file)
+sub safety_check
 {
 	my ($file)=@_;
 
